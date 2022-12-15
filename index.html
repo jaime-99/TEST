@@ -1,0 +1,54 @@
+<h2> Test de preguntas </h2>
+
+
+<script>
+    function saltarlinea() {
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(escribir) {
+        document.write(escribir);
+        saltarlinea();
+
+    }
+
+
+ var respuesta1 = "messi";
+ contador = 1; 
+ oportunidades = 3;
+
+
+
+while (contador <= oportunidades) {
+    
+
+ respuesta = prompt("Como se llama el mejor jugador del mundo?")
+ if (respuesta == respuesta1) {
+
+    alert ("estas en lo correcto, MESSI ES EL MEJOR DE LOS TIEMPOS ");
+    break;
+    
+ }
+else{
+    alert("no, ese no es, intenta otra vez, IMBECIL" );
+
+}
+
+contador++;
+
+
+}
+
+if (respuesta == respuesta1) {
+
+imprimir ("estas en lo correcto, messi ES EL MEJOR DEL MUNDO!!!");
+
+
+}
+else{
+imprimir("no, ese no era, la respuesta era " + respuesta1 );
+}
+
+    </script>
